@@ -1,17 +1,10 @@
-[package]
-name = "xi-core"
-version = "0.2.0"
-license = "Apache-2.0"
-authors = ["Raph Levien <raph@google.com>"]
-description = "Main process for xi-core, based on json-rpc"
-repository = "https://github.com/google/xi-editor"
-
-[dependencies]
-serde = "0.9"
-serde_json = "0.9"
-
-[dependencies.xi-core-lib]
-path = "core-lib"
-
-[dependencies.xi-rpc]
-path = "rpc"
+[workspace]
+members = [
+    "core-lib",
+    "lang",
+    "plugin-lib",
+    "rope",
+    "rpc",
+    "syntect-plugin",
+    "unicode",
+]
