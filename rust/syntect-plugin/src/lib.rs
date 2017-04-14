@@ -146,7 +146,7 @@ impl<'a> caching_plugin::Handler for PluginState<'a> {
     }
 }
 
-fn main() {
+pub fn start() {
     let sets = Sets {
         ss: SyntaxSet::load_defaults_newlines(),
         ts: ThemeSet::load_defaults(),
